@@ -9,8 +9,37 @@
 
 .Textarea {
 	font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+	font-size: 14px;
 }
 
 textarea.textarea {
 	min-height: 240px;
+}
+
+h1 {
+	@apply text-5xl font-bold leading-normal;
+}
+
+h2 {
+	@apply text-4xl font-bold leading-normal;
+}
+
+h3 {
+	@apply text-3xl font-bold leading-normal;
+}
+
+h4 {
+	@apply text-2xl font-bold leading-normal;
+}
+
+h5 {
+	@apply text-xl font-bold leading-normal;
+}
+
+h6 {
+	@apply text-base font-bold leading-normal;
+}
+
+p {
+	@apply text-base leading-normal;
 }
