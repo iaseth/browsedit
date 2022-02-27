@@ -10,6 +10,11 @@ export default function HTMLTab ({
 }) {
 
 	const tref = React.useRef(null);
+	const [cursor, setCursor] = React.useState(0);
+
+	React.useEffect(function () {
+		tref.current.setSelectionRange(cursor, cursor);
+	}, [cursor]);
 
 	function handleKeyDown (e) {
 		const keyCode = e.keyCode;
@@ -33,6 +38,7 @@ export default function HTMLTab ({
 
 			let newText = htmlText.slice(0, start-selected.length) + `<${selected}></${selected}>` + htmlText.slice(start);
 			setHtmlText(htmlText => newText);
+			setCursor(start + 2);
 		} else if (keyCode === 13) {
 			// enter key
 		}
