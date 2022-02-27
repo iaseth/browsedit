@@ -1,13 +1,13 @@
 import React from 'react';
 
+import Browsedit from './Browsedit';
 
 
-function App() {
+
+function App () {
 	return (
 		<div className="App">
-			<div className="min-h-screen bg-purple-400 text-white flex">
-				<h2 className="text-4xl m-auto">Hallo <span className="bg-purple-600 px-2 py-1 rounded">PWA</span></h2>
-			</div>
+			<Browsedit />
 		</div>
 	);
 }
