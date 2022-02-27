@@ -6,7 +6,7 @@ export default function CSSTab ({
 }) {
 
 	return (
-		<div className="CSSTab h-full grow bg-slate-200 p-4 flex flex-col">
+		<div className="CSSTab basis-0 grow p-4 flex flex-col">
 			<h2 className="font-bold text-xl px-2 pb-2">CSS</h2>
 			<div className="grow">
 				<textarea value={cssText} onChange={(e) => setCssText(e.target.value)} className="textarea"></textarea>

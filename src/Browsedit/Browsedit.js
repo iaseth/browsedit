@@ -2,7 +2,8 @@ import React from 'react';
 
 import './Browsedit.css';
 
-import Input from './Input';
+import HTMLTab from './HTMLTab';
+import CSSTab from './CSSTab';
 import Output from './Output';
 
 
@@ -11,10 +12,8 @@ export default function Browsedit () {
 	const [htmlText, setHtmlText] = React.useState("");
 	const [cssText, setCssText] = React.useState("");
 
-	const inputProps = {
-		htmlText, setHtmlText,
-		cssText, setCssText
-	};
+	const htmlProps = {htmlText, setHtmlText};
+	const cssProps = {cssText, setCssText};
 
 	const outputProps = {
 		htmlText, cssText
@@ -22,8 +21,9 @@ export default function Browsedit () {
 
 	return (
 		<div className="Browsedit">
-			<div className="min-h-screen md:flex">
-				<Input {...inputProps} />
+			<div className="min-h-screen md:flex md:items-stretch bg-slate-300">
+				<HTMLTab {...htmlProps} />
+				<CSSTab {...cssProps} />
 				<Output {...outputProps} />
 			</div>
 		</div>

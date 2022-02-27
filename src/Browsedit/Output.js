@@ -6,7 +6,7 @@ export default function Output ({
 }) {
 
 	return (
-		<div className="Output grow max-w-lg p-4 bg-white">
+		<div className="Output basis-0 grow max-w-lg p-4 bg-slate-200">
 			<style>{cssText}</style>
 			<div dangerouslySetInnerHTML={{__html: htmlText}}></div>
 		</div>
