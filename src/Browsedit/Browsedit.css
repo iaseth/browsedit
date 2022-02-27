@@ -3,6 +3,11 @@
 	min-height: 240px;
 }
 
+.LineNumbers {
+	padding: 8px 6px;
+	text-align: right;
+}
+
 .textarea {
 	display: block;
 	width: 100%;
