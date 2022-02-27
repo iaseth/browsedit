@@ -1,3 +1,4 @@
+import {Heading} from './Utils';
 
 
 
@@ -7,7 +8,7 @@ export default function CSSTab ({
 
 	return (
 		<div className="CSSTab basis-0 grow p-4 flex flex-col">
-			<h2 className="font-bold text-xl px-2 pb-2">CSS</h2>
+			<Heading>CSS</Heading>
 			<div className="grow">
 				<textarea value={cssText} onChange={(e) => setCssText(e.target.value)} className="textarea"></textarea>
 			</div>
