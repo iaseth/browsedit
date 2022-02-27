@@ -22,9 +22,9 @@ export default function Browsedit () {
 	return (
 		<div className="Browsedit">
 			<div className="min-h-screen md:flex md:items-stretch bg-slate-300">
+				<Output {...outputProps} />
 				<HTMLTab {...htmlProps} />
 				<CSSTab {...cssProps} />
-				<Output {...outputProps} />
 			</div>
 		</div>
 	);

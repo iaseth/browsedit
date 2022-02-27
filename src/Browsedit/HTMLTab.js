@@ -7,7 +7,7 @@ export default function HTMLTab ({
 }) {
 
 	return (
-		<div className="HTMLTab basis-0 grow p-4 bg-slate-200 flex flex-col">
+		<div className="HTMLTab basis-0 grow p-4 flex flex-col">
 			<Heading>HTML</Heading>
 			<div className="grow">
 				<textarea value={htmlText} onChange={(e) => setHtmlText(e.target.value)} className="textarea"></textarea>
