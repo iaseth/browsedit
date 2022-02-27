@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Browsedit.css';
+
 import Input from './Input';
 import Output from './Output';
 
