@@ -8,7 +8,7 @@ export default function HTMLTab ({
 }) {
 
 	return (
-		<div className="HTMLTab basis-0 grow p-4 flex flex-col">
+		<div className="HTMLTab basis-0 grow p-4 pt-2 flex flex-col">
 			<Heading>HTML</Heading>
 			<Textarea text={htmlText} setText={setHtmlText} />
 		</div>

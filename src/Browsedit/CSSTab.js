@@ -8,7 +8,7 @@ export default function CSSTab ({
 }) {
 
 	return (
-		<div className="CSSTab basis-0 grow p-4 bg-slate-200 flex flex-col">
+		<div className="CSSTab basis-0 grow p-4 pt-2 bg-slate-200 flex flex-col">
 			<Heading>CSS</Heading>
 			<Textarea text={cssText} setText={setCssText} />
 		</div>

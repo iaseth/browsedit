@@ -16,7 +16,7 @@ export default function LineNumbers ({text}) {
 	});
 
 	return (
-		<div className="LineNumbers text-slate-500 font-bold">
+		<div className="LineNumbers text-slate-500 font-bold py-2 pr-2 text-right">
 			{items}
 		</div>
 	);
