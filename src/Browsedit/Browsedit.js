@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Browsedit.css';
-
 import HTMLTab from './HTMLTab';
 import CSSTab from './CSSTab';
 import Output from './Output';

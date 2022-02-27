@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Output {
+	min-height: 240px;
+}
+
+.Textarea {
+	font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+textarea.textarea {
+	min-height: 240px;
+}
