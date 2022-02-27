@@ -1,0 +1,1 @@
+{"snippets": [{"name": "flexbox-simple", "meta": {"title": "Flexbox simple"}, "html": "\n<div class=\"container\">\n\t<div class=\"item\">A</div>\n\t<div class=\"item\">B</div>\n\t<div class=\"item\">C</div>\n</div>\n", "css": "\ndiv.container {\n\tdisplay: flex;\n}\n\ndiv.item {\n\tpadding: 40px;\n\tbackground-color: orange;\n\tmargin: 0px 10px;\n}\n"}]}
