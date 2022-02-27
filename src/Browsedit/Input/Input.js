@@ -1,7 +1,8 @@
 import React from 'react';
 
 import TabBar from './TabBar';
-import Tab from './Tab';
+import HTMLTab from './HTMLTab';
+import CSSTab from './CSSTab';
 
 const tabs = [
 	"HTML", "CSS"
@@ -22,23 +23,14 @@ export default function Input ({
 
 	function getCurrentTab () {
 		let tabName = tabs[currentTabIndex];
-		let props = {};
 
 		if (tabName === "HTML") {
-			props = {
-				text: htmlText,
-				setText: setHtmlText,
-				...props
-			};
+			const props = {htmlText, setHtmlText};
+			return <HTMLTab {...props} />;
 		} else if (tabName === "CSS") {
-			props = {
-				text: cssText,
-				setText: setCssText,
-				...props
-			};
+			const props = {cssText, setCssText};
+			return <CSSTab {...props} />;
 		}
-
-		return <Tab {...props} />;
 	}
 
 	return (
