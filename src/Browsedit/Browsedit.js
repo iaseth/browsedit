@@ -8,16 +8,14 @@ import Output from './Output';
 export default function Browsedit () {
 	const [htmlText, setHtmlText] = React.useState("");
 	const [cssText, setCssText] = React.useState("");
-	const [jsText, setJsText] = React.useState("");
 
 	const inputProps = {
 		htmlText, setHtmlText,
-		cssText, setCssText,
-		jsText, setJsText
+		cssText, setCssText
 	};
 
 	const outputProps = {
-		htmlText, cssText, jsText
+		htmlText, cssText
 	};
 
 	return (

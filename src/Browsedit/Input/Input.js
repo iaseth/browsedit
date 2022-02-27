@@ -4,15 +4,14 @@ import TabBar from './TabBar';
 import Tab from './Tab';
 
 const tabs = [
-	"HTML", "CSS", "JS"
+	"HTML", "CSS"
 ];
 
 
 
 export default function Input ({
 	htmlText, setHtmlText,
-	cssText, setCssText,
-	jsText, setJsText
+	cssText, setCssText
 }) {
 
 	const [currentTabIndex, setCurrentTabIndex] = React.useState(0);
@@ -35,12 +34,6 @@ export default function Input ({
 			props = {
 				text: cssText,
 				setText: setCssText,
-				...props
-			};
-		} else if (tabName === "JS") {
-			props = {
-				text: jsText,
-				setText: setJsText,
 				...props
 			};
 		}

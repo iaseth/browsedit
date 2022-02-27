@@ -2,7 +2,7 @@
 
 
 export default function Output ({
-	htmlText, cssText, jsText
+	htmlText, cssText
 }) {
 
 	return (
