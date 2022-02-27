@@ -1,8 +1,8 @@
 module.exports = {
   content: [
     "src/*.{js,json}",
-    "src/*/*.js",
-    "src/*/*/*.js"
+    "src/Browsedit/*.js",
+    "src/Browsedit/*/*.js"
   ],
   theme: {
     extend: {},
