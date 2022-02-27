@@ -25,20 +25,29 @@ export default function HTMLTab ({
 			e.preventDefault();
 			const start = target.selectionStart;
 			const end = target.selectionEnd;
-			let selected = htmlText.slice(start, end);
-			if (!selected) {
-				let index = start;
-				while (index > 0) {
-					let c = htmlText[index-1];
-					if (c === '\n' || c === ' ') break;
-					index--;
-				}
-				selected = htmlText.slice(index, start);
+			let index = start;
+			while (index > 0) {
+				let c = htmlText[index-1];
+				if (c === '\n' || c === ' ') break;
+				index--;
 			}
+			let selected = htmlText.slice(index, start);
 
-			let newText = htmlText.slice(0, start-selected.length) + `<${selected}></${selected}>` + htmlText.slice(start);
+			if (selected === "") return;
+			let parts = selected.split('.');
+			let classes = parts.slice(1).join(' ');
+
+			let tagName = parts[0];
+			let openTag = classes ? `<${tagName} class="${classes}">` : `<${tagName}>`;
+			let closeTag = `</${tagName}>`;
+			let tag = openTag + closeTag;
+			let newText = htmlText.slice(0, start-selected.length) + tag + htmlText.slice(start);
 			setHtmlText(htmlText => newText);
-			setCursor(start + 2);
+			if (classes) {
+				setCursor(start + 10);
+			} else {
+				setCursor(start + 2);
+			}
 		} else if (keyCode === 13) {
 			// enter key
 		}
