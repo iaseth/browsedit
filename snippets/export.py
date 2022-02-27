@@ -37,7 +37,7 @@ def main():
 	jo["snippets"] = snippets
 	# print(json.dumps(jo, indent="\t"))
 
-	output_filename = "snippets.json"
+	output_filename = "../src/snippets.json"
 	with open(output_filename, "w") as f:
 		json.dump(jo, f)
 		print(f"\t==== saved {len(htmls)} snippets to {output_filename}.")
